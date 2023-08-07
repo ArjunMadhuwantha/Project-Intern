@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Login Form</title>
+  <meta charset="UTF-8">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <section>
-        <div class="form-box">
-            <div class="form-value">
-                <form action="php/login.php" onsubmit="return validateForm()" method="post">
-                    <h2>Login</h2>
-                    <div class="inputbox">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required name="userEmail">
-                        <label for="">Email</label>
-                    </div>
-                    <div class="inputbox">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" required name="userPassword">
-                        <label for="">password</label>
-                    </div>
-                    <div class="forget">
-                        <label for=""><input type="checkbox">Remember Me? <a href="#"> Forget Password ?</a></label>
-                        
-                    </div>
-                    <button type="submit" name="login" value="login">Log in</button> 
-                </form>
-            </div>
-        </div>
-    </section>
+  <h1>Weather Forecast</h1>
 
-    <script>
-        function validateForm() {
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
+  <p>Timely predictions of atmospheric conditions, temperature, precipitation, and wind, 
+    enabling informed <br/> decisions and preparedness for changing weather scenarios.</p>
 
-            // Check if email and password fields are not empty
-            if (email.trim() === "" || password === "") {
-                alert("Please fill out all required fields.");
-                return false;
-            }
+  <div class="data-container">
+    <div id="current-weather-container">
+        <img src="Frame 1.png" alt="Current Weather Image">
+    </div>
+    <div id="three-day-summary-container">
+        <img src="Frame 2.png" alt="Current Weather Image">
+    </div>
+    <div id="view-more-container">
+        <img src="Frame 3.png" alt="Current Weather Image">
+    </div>
+  </div>
 
-            return true;
-        }
-    </script>
+  <div class="data-container2">
+        <img src="back.png" alt="Current Weather Image">
+  </div>
+
+  <div class="data-container3">
+    <div class="current2">
+        <img src="Group 60.png" alt="Current Weather Image">
+    </div>
+    <div class="current3">
+        <img src="Group 65.png" alt="Current Weather Image">
+    </div>
+  </div>
+
+  <h1>About Us</h1>
+
+  <p class="p2">Welcome to Whether Proacts Company! We are a dynamic and innovative organization dedicated to providing top-notch<br/>
+    weather solutions for businesses and individuals alike. Our team of expert meteorologists, data scientists, and 
+    <br/>technology enthusiasts work tirelessly to deliver accurate and reliable weather forecasts and insights tailored to your 
+    <br> needs. Whether you are seeking real-time weather updates, climate analysis, or customized weather risk <br/>
+    assessments, we've got you covered. At Whether Proacts, we believe that informed decisions based on precise weather <br/>
+     information can make a significant difference in optimizing operations and ensuring safety. Join us on this <br/>
+      meteorological journey, and let us empower you with the knowledge to stay ahead of the weather challenges. Your <br/>
+      weather readiness is our priority!</p>
+
+    <div class="footer">
+
+    </div>
+    <footer>
+        <div class="logofoot"></div>
+        
+    </footer>
 </body>
 </html>
